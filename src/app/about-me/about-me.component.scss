@@ -1,0 +1,29 @@
+.aboutme {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+   
+
+    h2 {
+        font-family: 'Syne', sans-serif;
+        font-weight: 800;
+        font-size: calc(8px + 4vw);
+    }
+
+    h2:hover {
+        color: #5988FF;
+        cursor: pointer;
+    }
+
+
+img {
+    background-color: lightgrey;
+    background-size: 45%;
+    width: 40%;
+    }
+}
+
+
+
+
+

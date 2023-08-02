@@ -2,74 +2,87 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-h1 {
-    font-family: 'syne', sans-serif;
-    font-weight: 800;
-    font-size: calc(10px + 7vw);
-    margin-bottom: 5px;
-}
-
-.main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.name-section {
-    display: flex;
-   flex-direction: row;
-   align-items: center;
-}
-
-.line {
-    display: flex;
-    align-items: center;
-    background-color: black;
-    height: 3px;
-    width: 15rem;
-    margin-right: 10px;
-}
-
-.name {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    color: #5988FF;
-}
 
 
-
-.info-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 24px;
+    h1 {
+        font-family: 'Syne', sans-serif;
+        font-weight: 900;
+        font-size: calc(10px + 8vw);
+        margin-bottom: 2px;
+    }
     
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
     
+    .name-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
-.header-mail {
-    display: flex;
-    align-items: center;
-   
+
+       .line {
+        display: flex;
+        align-items: center;
+        background-color: black;
+        height: 3px;
+        width: 30em;
+        margin-right: 10px;
+    }
     
-    a {
-        text-decoration: none !important;
-        color: black;
-        transform: rotate(270deg);
-       
-
-
+    .name {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        color: #5988FF;
+        font-weight: 600;
+        font-size: 32px;
+        font-family: 'Overpass', sans-serif;
     }
 }
 
+    .info-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 24px;
 
-.scroll-sec {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-}
 
+        .header-mail {
+            display: flex;
+            align-items: center;
+           
+
+            a {
+                text-decoration: none !important;
+                color: black;
+                transform: rotate(270deg);
+               
+            }
+            
+
+            .scroll-sec {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+           }
+        
+           
+
+
+    
+    }
+
+  
+
+
+
+    
+        
