@@ -51,7 +51,21 @@ body {
   margin-left: 6rem;
   margin-right: 6rem;
  
+
+  h2 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: calc(8px + 4vw);
+    
+
+h2:hover {
+  color: #5988FF;
+  cursor: pointer;
+}
+}
 } 
+
+
     
 }
 
