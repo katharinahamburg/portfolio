@@ -1,13 +1,16 @@
 .about-h2 {
     display: flex;
     padding-right: 10rem;
+
 }
+
 
 .aboutme {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    height: 60vh;
    
  .about {
     display: flex;
@@ -31,13 +34,14 @@
 
     .talk:hover {
         font-weight: 600;
-        cursor: pointer;
+        cursor: alias;
         width: 253px;
         border: 5px solid black;
     }
 }
 
-        
+
+
 
     .pom {
         width: 553px;
@@ -56,17 +60,11 @@
         img:hover {
             box-shadow: 0px 0px 50px rgba(21, 21, 21, 0.641);
             transition: ease-in-out;
-            cursor:alias;
+            cursor: alias;
            
             
-}
+        }
            
             
                  
-        }
-
-    
-
-    
-
-
+    }

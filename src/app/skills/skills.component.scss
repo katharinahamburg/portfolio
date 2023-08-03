@@ -1,4 +1,4 @@
-.skills {
+
     .arrow-right {
         display: flex;
         flex-direction: row-reverse;
@@ -20,7 +20,7 @@
     }
     
 
-}
+
 
 
 .myskills {
@@ -57,6 +57,11 @@
     display: flex;
     width: 75px;
     height: 75px;
+    cursor: move;
+    }
+    .skill-icon:hover {
+        background-color: #5988FF;
+    }
 }
 
 
@@ -65,6 +70,7 @@
     margin-top: 10px;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .skill-name:hover {
@@ -75,5 +81,5 @@
 
 }
 
-}
+
 
