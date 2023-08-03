@@ -14,10 +14,13 @@
         padding-top: 30px;
     }
     
+    h2 {
+        background-color: #fffcf3;
+        text-indent: 10px;
+    }
     
+
 }
-
-
 
 
 .myskills {
@@ -41,7 +44,7 @@
     flex-wrap: wrap;
 
 
-.skill {
+    .skill {
     display: flex;
     justify-content: center;
     flex-direction: column;

@@ -5,13 +5,14 @@
     margin-top: 0;
     position: fixed;
     height: 60px;
-    width: 80vw;
+    width: 100vw;
     position: fixed;
     background-color: #fffcf3;
    
    
     
     .logo {
+        margin-top: 5px;
         width: 150px;
         height: 150px;
         cursor: pointer;
@@ -26,6 +27,7 @@
             display: flex;
             width: 50px;
             height: 50px;
+            margin-right: 15vw;
             cursor: pointer;
         }
     

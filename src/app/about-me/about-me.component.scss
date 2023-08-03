@@ -1,7 +1,12 @@
+.about-h2 {
+    display: flex;
+    padding-right: 10rem;
+}
+
 .aboutme {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
    
  .about {
@@ -10,6 +15,7 @@
     flex-direction: column;
     font-size: 30px;
     width: 719px;
+    padding-bottom: 200px;
     
  }
 
@@ -35,7 +41,6 @@
 
     .pom {
         width: 553px;
-        
         border-radius: 5px;
         background-color: #fffcf3;
         
@@ -43,12 +48,16 @@
         img {
             width: 553px;
             border-radius: 5px;
+            box-shadow: 0px 0px 20px rgba(95, 94, 94, 0.641);
+            
         }
 
 
         img:hover {
             box-shadow: 0px 0px 50px rgba(21, 21, 21, 0.641);
             transition: ease-in-out;
+            cursor:alias;
+           
             
 }
            
