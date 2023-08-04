@@ -1,16 +1,22 @@
-
-    .arrow-right {
+.myskills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+    #arrow-right {
         display: flex;
         flex-direction: row-reverse;
-        margin-right: 18%;
-        min-height: 250px;
-        padding-top: 30px;
+        justify-content: flex-end;
+        min-height: 200px;
+        padding-top: 1px;
     }
-    .arrow-left {
+    #arrow-left {
         display: flex;
         flex-direction: row;
-        margin-left: 18%;
-        min-height: 250px;
+        
+        min-height: 200px;
         padding-top: 30px;
     }
     
@@ -19,11 +25,9 @@
         text-indent: 10px;
     }
     
-
-
-
-
-.myskills {
+.skills-container {
+    
+    width: 90%;
     margin-top: 50px;
     margin-bottom: 50px;
     border: 4px solid black;
