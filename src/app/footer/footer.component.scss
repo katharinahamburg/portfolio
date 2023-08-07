@@ -1,0 +1,29 @@
+.footer {
+    height: 200px;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .footer-right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .copy, .imprint, .privacy-policy {
+        color: #fffcf3;
+        display: flex;
+    }
+}
