@@ -1,8 +1,8 @@
 <div id="myskills" class="myskills">
-    <div id="arrow-right">
-<img src="assets/img/arrowright1.svg" alt="">
+    <div *ngIf="showSkillArrow" id="arrow-right" class="arrow-animation">
+<img src="assets/img/{{ rightarrows[currentSkillArrow] }}" alt="">
     </div>
-
+ 
     <div class="skills-container">
 <h2>My skills</h2>
 <div class="skills">
@@ -74,7 +74,8 @@
     </div>
 </div>
     </div>
-    <div id="arrow-left">
-        <img src="assets/img/arrowleft1.svg" alt="">
-    </div>
+    
+    <div *ngIf= "showSkillArrow" id="arrow-left" class="arrow-animation">
+        <img src="assets/img/{{ leftarrows[currentSkillArrow] }}" alt="">
+            </div>
 </div>

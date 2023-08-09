@@ -12,6 +12,11 @@
     flex-direction: row;
     align-items: center;
     margin-right: 10%;
+
+
+    img {
+        padding-right: 15px;
+    }
 }
 
 
@@ -21,13 +26,28 @@
     align-items: center;
     margin-left: 10%;
 
+    img {
+        padding-bottom: 15px;
+    }
+
     
-    .copy, .imprint, .data-protection {
+    .copy, .a {
         color: #fffcf3;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-top: 8px;
+        padding-top: 15px;
+    }
+
+    a {
+        font-family: 'Overpass', sans-serif;
+        color: #fffcf3;
+        text-decoration: none;
+        padding-right: 10px;
+        
+    }
+    .copy {
+        font-size: 10px;
     }
 
 }

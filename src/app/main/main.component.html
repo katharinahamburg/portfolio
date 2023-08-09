@@ -12,10 +12,12 @@
             <a href="mailto:">katharina@hinnrichs.de</a>
         </aside>
     <div class="scroll-sec">
-            <div class="about-img">
-            <img  class="arrow-down-animation" 
-                src="assets/img/{{ arrow }}.svg">
+
+            <div class="arrow-img">
+                <img *ngIf= "showArrow" class="arrow-down-animation"
+                src="assets/img/{{ arrows[currentArrow] }}">
             </div> 
+
     <div class="scroll-text">Scroll<br>Down</div>
 
     </div>
