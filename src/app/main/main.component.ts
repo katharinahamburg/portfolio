@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-arrows = ['arrowdown1.svg', 'arrowdown2.svg', 'arrowdown3.svg', 'arrowdown4.svg', 'arrowdown5.svg'];
+arrows = ['arrowdown0.png','arrowdown1.svg', 'arrowdown2.svg', 'arrowdown3.svg', 'arrowdown4.svg', 'arrowdown5.svg', 'arrowdown6.png'];
 currentArrow = 0;
 showArrow = true;
 
@@ -18,7 +18,7 @@ updateArrow()  {
   setInterval(() => {
     this.currentArrow++;
     this.currentArrow = this.currentArrow % this.arrows.length;
-  }, 400);
+  }, 200);
   }
 
 }
