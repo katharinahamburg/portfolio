@@ -9,15 +9,32 @@
 
 .footer-right {
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 10%;
+}
+#arrow-footer {
+    display: flex;
+    padding-bottom: 30px;
+    width: 60px;
+    height: 60px; 
+}
+
+#arrow-footer:hover {
+    cursor: pointer;
+}
+
+.footer-right-links {
+    display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 10%;
 
-
-    img {
-        padding-right: 15px;
+    a {
+        padding-right: 20px;
     }
 }
+
+
 
 
 .footer-left {
@@ -36,7 +53,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-top: 15px;
+        padding-top: 20px;
     }
 
     a {
@@ -49,6 +66,8 @@
     .copy {
         font-size: 10px;
     }
-
+    .logo-footer:hover {
+        cursor: pointer;
+    }
 }
 
