@@ -22,11 +22,6 @@ updateSkillArrow()  {
     this.currentSkillArrow++;
     this.currentSkillArrow = this.currentSkillArrow % this.rightarrows.length;
     this.currentSkillArrow = this.currentSkillArrow % this.leftarrows.length;
-    this.showSkillArrow = false;
-
-    setTimeout(() => {
-      this.showSkillArrow = true;
-    }, 10);
   }, 400);
   }
 }

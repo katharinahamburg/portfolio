@@ -42,9 +42,19 @@
 
     .project-infobox {
         display: flex;
+        flex-direction: row-reverse;
         width: 50%;
         height: 500px;
-        background-color: blueviolet;
+        
+
+        .count {
+            padding-top: 2px;
+            padding-right: 2px;
+            font-size: 45px;
+            font-family: 'Syne', sans-serif;
+            font-weight: 500;
+        }
+
     }
        
 
@@ -66,11 +76,20 @@
     }
 }
 
-    .project-infobox-2{
+    .project-infobox-reverse{
         display: flex;
         width: 50%;
         height: 500px;
-        background-color: pink;
+        
+
+
+        .count-re {
+            padding-top: 2px;
+            padding-left: 2px;
+            font-size: 45px;
+            font-family: 'Syne', sans-serif;
+            font-weight: 500;
+        }
     }
        
 

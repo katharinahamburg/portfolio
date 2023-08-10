@@ -18,11 +18,6 @@ updateArrow()  {
   setInterval(() => {
     this.currentArrow++;
     this.currentArrow = this.currentArrow % this.arrows.length;
-    this.showArrow = false;
-
-    setTimeout(() => {
-      this.showArrow = true;
-    }, 10);
   }, 400);
   }
 
