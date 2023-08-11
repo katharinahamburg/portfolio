@@ -11,11 +11,7 @@ h2 {
     align-items: center;
     justify-content: space-evenly;
     height: 60vh;
-   
-
-   
-   
-   
+     
  #about {
     display: flex;
     align-items: center;
@@ -55,10 +51,20 @@ h2 {
 
 
     .pom {
-        
+        position: relative;
         border-radius: 5px;
         background-color: #fffcf3;
-       
+        
+
+        .pom-frame {
+            position: absolute;   
+            top: 10px;
+            left: 10px;  
+            width: calc(100% - 5px); 
+            height: calc(100% - 5px);
+            border: 4px solid black;
+          }
+
 
         img {
             width: 553px;
@@ -76,6 +82,8 @@ h2 {
             
         }
            
-            
-                 
+           
     }
+        
+             
+   

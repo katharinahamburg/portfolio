@@ -1,11 +1,5 @@
 import { Component } from '@angular/core';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition,
-} from '@angular/animations';
+
 
 @Component({
   selector: 'app-header',
@@ -14,14 +8,17 @@ import {
   
 })
 export class HeaderComponent {
-showMenu = false;
 
-openMenu() {
-  this.showMenu = true;
   
-}
+  openMenu() {
+    document.getElementById('open-menu').style.transform = 'translateY(0)';
+    document.getElementById('menu-links').style.visibility = 'visible';
+  }
 
-closeMenu() {
-  this.showMenu = false;
-}
+  closeMenu() {
+    document.getElementById('open-menu').style.transform = 'translateY(-103vh)';
+    document.getElementById('menu-links').style.visibility = 'hidden';
+  }
+
+
 }
