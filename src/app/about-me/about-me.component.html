@@ -20,11 +20,12 @@
         <button class="talk">Let's talk</button>
         </div>
         </span>
-    <div class="pom">
-        <div class="pom-frame"></div>
-    <img src="assets/img/foto.jpg" alt="">
+    <div class="pom" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+        <img src="assets/img/foto.jpg" alt="">
+        <div class="pom-frame"[style.border]="isHovered ? '4px solid black' : '4px solid transparent'"></div></div>
+    
     </div>
-</div>
+
   
 
 
