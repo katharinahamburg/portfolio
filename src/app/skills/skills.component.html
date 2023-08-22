@@ -1,6 +1,7 @@
 <div id="myskills" class="myskills">
-    <div *ngIf="showSkillArrow" id="arrow-right" class="arrow-animation">
-<img src="assets/img/{{ rightarrows[currentSkillArrow] }}" alt="">
+    <div id="arrow-right" class="arrow-animation" 
+    (mouseover)="updateSkillArrow()" (mouseout)="showSkillArrow">
+<img *ngIf="showSkillArrow" src="assets/img/{{ rightarrows[currentSkillArrow] }}" alt="">
     </div>
  
     <div class="skills-container">
@@ -75,7 +76,7 @@
 </div>
     </div>
     
-    <div *ngIf= "showSkillArrow" id="arrow-left" class="arrow-animation">
-        <img src="assets/img/{{ leftarrows[currentSkillArrow] }}" alt="">
+    <div id="arrow-left" class="arrow-animation" (mouseover)="updateSkillArrow()" (mouseout)="showSkillArrow">
+        <img *ngIf="showSkillArrow" src="assets/img/{{ leftarrows[currentSkillArrow] }}" alt="">
             </div>
 </div>

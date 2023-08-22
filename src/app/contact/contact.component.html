@@ -1,6 +1,25 @@
-<div class="contact">
-    <div class="upper"></div>
-    <div class="inner-contact">
-        <h2>Say hi!</h2>
+<div id="contact" class="contact">
+    <div class="contact-box">
+      <h2>Say hi!</h2>
+      <div>
+        <h3>Want to discuss a new project?</h3>
+        <p>Say hello! Let's discuss your ideas and make it happen!</p>
+        <div class="form">
+          <div id="send-message" class="send-message">
+            <p>
+              Your message has been send! Shortly, I will replay.
+            </p>
+          </div>
+          <form id="form" class="pudel" (submit)="sendMail()" ngNativeValidate #myForm>
+            <input required type="text" placeholder="Let me know your name." class="form_input"
+            name="name" #nameField>
+            <input required type="email" placeholder="Let me know your email." class="form_input"
+            name="email" #mailField>
+            <textarea required name="message" id="message" class="form_input"
+            placeholder="Looking foreward to your message..." cols="34" rows="8"#message></textarea>
+            <button class="btn" #button>Send message</button>
+          </form>
+        </div>
+      </div>
     </div>
 </div>

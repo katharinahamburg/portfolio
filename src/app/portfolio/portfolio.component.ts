@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { trigger, transition, animate, style } from '@angular/animations';
+import { trigger, transition, animate, style, state } from '@angular/animations';
 
 @Component({
   selector: 'app-portfolio',
@@ -11,43 +11,36 @@ import { trigger, transition, animate, style } from '@angular/animations';
     ])
   ]
 })
+
 export class PortfolioComponent {
 
+showCircle = true;
 
-rightarrows = ['arrowright1.svg', 'arrowright2.svg', 'arrowright3.svg'];
-leftarrows = ['arrowleft1.svg', 'arrowleft2.svg', 'arrowleft3.svg'];
+
+rightarrows = ['arrowright1.svg', 'arrowright2.svg', 'arrowright3.svg', 'arrowright1.svg', 'arrowright2.svg', 'arrowright3.svg', 'arrowright1.svg'];
+
 currentSkillArrow = 0;
 showSkillArrow = true;
 
-ngOnInit() {
-  this.updateSkillArrow();
-}
-
 updateSkillArrow()  {
-
-  setInterval(() => {
     this.currentSkillArrow++;
     this.currentSkillArrow = this.currentSkillArrow % this.rightarrows.length;
-    this.currentSkillArrow = this.currentSkillArrow % this.leftarrows.length;
-  }, 400);
   }
 
-  
-  isHovered = false;
+  isHovered = [false, false, false];
 
-  onMouseEnter() {
-    this.isHovered = true;
-    setTimeout(() => {
-      document.getElementById('arrow-down2').style.transform = 'rotate(150deg)';
-      document.getElementById('arrow-down').style.transform = 'rotate(-150deg)';
-      document.getElementById('arrow-down3').style.transform = 'rotate(-150deg)';
-    }, 200);
-    document.getElementById('arrow-down2').style.transform = 'rotate(0deg)';
-    document.getElementById('arrow-down').style.transform = 'rotate(0deg)';
-    document.getElementById('arrow-down3').style.transform = 'rotate(0deg)';
+  rotateCircle(index: number) {
+    this.isHovered[index]= true;
+      document.getElementById('circle').style.transform = 'rotate(-150deg)';
+      document.getElementById('circle_1').style.transform = 'rotate(150deg)';
+      document.getElementById('circle_2').style.transform = 'rotate(-150deg)';   
   }
 
-  onMouseLeave() {
-    this.isHovered = false;
+  noRotationCircle(index: number) {
+    this.isHovered[index] = false;
+    document.getElementById('circle').style.transform = 'rotate(0deg)';
+      document.getElementById('circle_1').style.transform = 'rotate(0deg)';
+      document.getElementById('circle_2').style.transform = 'rotate(0deg)'; 
   }
+
 }

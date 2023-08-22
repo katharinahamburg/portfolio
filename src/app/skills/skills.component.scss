@@ -31,7 +31,6 @@
 
 
 .skills-container {
-    
     width: 90%;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -95,7 +94,9 @@
     color: #5988FF;
 }
 }
-
+.arrow-animation {
+    transition: 130ms ease-in-out;
+}
 
 }
 

@@ -1,24 +1,123 @@
-.contact {
+* {
+    box-sizing: border-box;
+}
+
+.contact-box {
+    display: flex;
+    background-image: url("/assets/img/background2.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
-   
+    flex-direction: column;
+    padding-top: 300px;
+    padding-left: 50px;
+  
+
+  h2 {
     display: flex;
-    justify-content: center;
-    background-color: black;
-}
-
-.inner-contact {
-    margin-top: 150px;
-    display: flex;
-    justify-content: center;
-    height: 90%;
-
-   
-}
-.upper {
-    height: 18%;
-
-}
-
-h2 {
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 8rem;
     color: #fffcf3;
+
+    &:hover {
+      color: #5988FF;
+    }
+  }
+
+  h3 {
+    color:  #5988FF;
+    font-size: 34px;
+    font-weight: 400;
+    
+  }
+
+  p {
+    color: #fffcf3;
+    font-size: 24px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.send-message {
+  transition: all 115ms ease-in-out;
+  position: absolute;
+  visibility: hidden;
+  background: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -175px;
+
+}
+
+
+.form {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  padding-top: 150px;
+  transition: transform 0.4s ease;
+
+  .form_input {
+    font-family: Overpass;
+}
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 130ms ease-in-out;
+  gap: 20px;
+  padding-bottom: 40px;
+  width: 500px;
+
+  input,
+  textarea {
+    padding: 8px;
+    font-size: 20px;
+    background-color: black;
+    border: none;
+    border-bottom: solid 3px #fffcf3;
+    width: 100%;
+
+    &::placeholder {
+      color: #fffcf3;
+      opacity: 0.5;
+    
+    }
+   
+    &:focus {
+      background-color: black;
+      color: #fffcf3;
+    }
+  }
+
+
+  button {
+    color: #fffcf3;
+    background-color: black;
+    margin-top: 30px;
+    border: solid 5px #fffcf3;
+    padding: 15px 50px;
+    font-size: 24px;
+    transition: 130ms;
+    cursor: pointer;
+
+    &:hover {
+      color:  #5988FF;
+      border-color:  #5988FF;
+    }
+  }
 }
