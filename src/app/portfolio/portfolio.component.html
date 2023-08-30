@@ -89,9 +89,9 @@
   </div>
 
   </div>
-  <div  id="arrow-right" class="arrow-animation" (mouseover)="updateSkillArrow()" (mouseout)="showSkillArrow">
+  <div id="arrow-right" class="arrow-animation" (mouseover)="updateSkillArrow()" (mouseout)="showFirstArrow()">
     <img 
-    *ngIf="showSkillArrow" src="assets/img/{{ rightarrows[currentSkillArrow] }}" alt="">
+    *ngIf="updateSkillArrow" src="assets/img/{{ rightarrows[currentSkillArrow] }}" alt="">
         </div>
   
 </div>

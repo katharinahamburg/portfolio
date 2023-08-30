@@ -66,13 +66,9 @@
 
   .project-infobox,
    .project-box-reverse {
-    img {
-       
-        
-        transition: 130ms ease-in-out; 
+    img { 
+        transition: 100ms ease-in-out; 
         max-width: 900px;
-    
-
     }
   
     p {
@@ -101,7 +97,7 @@
         transition: border 130ms ease-in-out; 
         width: 110%; 
         height: 85%;
-        border-radius: 5px; 
+        border-radius: 8px; 
       }
 
       .project {
@@ -171,6 +167,6 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    transition: 130ms ease-in-out; 
+    animation: all .4s ease-in-out;
   }
   

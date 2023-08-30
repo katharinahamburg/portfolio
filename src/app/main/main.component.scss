@@ -53,15 +53,20 @@
         .header-mail {
             display: flex;
             justify-content: space-between;
-            
             width: 90vw;
-           
 
+           
             a {
                 text-decoration: none !important;
                 color: black;
                 transform: rotate(270deg);
                 cursor: alias;
+               
+                    &:hover {
+                        color: #5988FF !important;
+                        text-decoration: underline !important;
+                    }
+                
             }
         }
 

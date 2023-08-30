@@ -51,6 +51,12 @@ h2 {
         width: 253px;
         border: 5px solid black;
     }
+
+    .talk:active {
+        background-color: black;
+        border: 4px solid black;
+        color: #fffcf3;
+    }
 }
 
     .pom {

@@ -37,6 +37,8 @@ export class ContactComponent {
     )
     this.animateForm();
   }
+
+  
   animateForm() {
     if (this.sendMail) {
         let form = document.getElementById('form');

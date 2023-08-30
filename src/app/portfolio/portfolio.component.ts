@@ -17,7 +17,7 @@ export class PortfolioComponent {
 showCircle = true;
 
 
-rightarrows = ['arrowright1.svg', 'arrowright2.svg', 'arrowright3.svg', 'arrowright1.svg', 'arrowright2.svg', 'arrowright3.svg', 'arrowright1.svg'];
+rightarrows = ['arrowright1.svg', 'arrowright2.svg', 'arrowright3.svg', 'arrowright1.svg'];
 
 currentSkillArrow = 0;
 showSkillArrow = true;
@@ -25,6 +25,12 @@ showSkillArrow = true;
 updateSkillArrow()  {
     this.currentSkillArrow++;
     this.currentSkillArrow = this.currentSkillArrow % this.rightarrows.length;
+    setTimeout(() => {
+  }, 200);
+  }
+
+  showFirstArrow() {
+    this.rightarrows[0];
   }
 
   isHovered = [false, false, false];

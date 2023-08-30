@@ -61,6 +61,9 @@
     text-align: center;
     width: 75px;
     margin: 80px;
+    &:hover {
+        color: #5988FF;
+    }
 
     .skill-icon {
     display: flex;
@@ -70,7 +73,9 @@
     }
     
     .skill-icon:hover { 
-        animation: perspect 2s infinite linear }
+        scale: 1.5;
+        transition: scale 120ms ease-in-out;
+        animation: perspect 1.5s infinite linear }
 
         @keyframes perspect {
             0% {transform:perspective(300px) rotateY(0deg)}
@@ -95,7 +100,7 @@
 }
 }
 .arrow-animation {
-    transition: 130ms ease-in-out;
+    animation: all .4s ease-in-out;
 }
 
 }

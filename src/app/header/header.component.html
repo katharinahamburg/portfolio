@@ -1,40 +1,44 @@
 
     <div id="header" class="header">
         <img id="logo" class="logo" src="assets/img/logo5.svg" alt="">
-        <img (click)="openMenu()" id="burger" class="burger" 
+        <img (click)="openMenu()" (mouseenter)="changeBurgerIcon()" (mousedown)="variantTwo()" (mouseleave)="variantThree()" id="burger" class="burger" 
         src="assets/img/burger.svg" alt="">
         <div id="open-menu" class="open-menu">
           <div class="menu-header">
             <a (click)="closeMenu()" routerLink="/"><img class="logo" src="assets/img/logo5.svg" alt=""></a>
-            <img (click)="closeMenu()" class="close" src="assets/img/kreuz.svg" alt="">
+            <img (click)="closeMenu()" (mouseenter)="changeCloseIcon()" (mousedown)="variantCloseOne()" (mouseleave)="variantCloseTwo()"  id="close" class="close" 
+            src="assets/img/kreuz.svg" alt="">
           </div>
           <div id="menu-links" class="menu-links">
             <div class="links">
               <a (click)="closeMenu()" href="#aboutme">About me</a>
               <a (click)="closeMenu()" href="#skills">My Skills</a>
               <a (click)="closeMenu()" href="#portfolio">Portfolio</a>
+              <a (click)="closeMenu()" href="#form">Contact</a>
             </div>
           </div>
-          
+           
+          <img class="background" src="assets/img/background.png" alt="">
           <div class="menu-footer">
             
-            <div class="menu-footer-top">
-                <h2>Say Hi!</h2>
+            <div class="img-div"></div>
+            <div class="menu-footer-box">
+              <h2>Say Hi!</h2>
                 
              </div>
               
              <span class="menu-footer-bottom">
                 <a class="mail-menu-footer">
-                    <a href="mailto:katharina@hinnrichs.de">katharina@hinnrichs.de</a>
+                    <a href="mailto:katharina@hinnrichs.de" target="_blank">katharina@hinnrichs.de</a>
                 </a>
             <div class="menu-footer-right-links">
                 <a href="https://github.com/katharinahamburg" target="_blank">
                   <img src="assets/img/github-icon.svg" alt="">
                 </a>
-                <a href="mailto:katharina@hinnrichs.de">
+                <a href="mailto:katharina@hinnrichs.de" target="_blank">
                     <img src="assets/img/email-icon.svg" alt="">
                   </a>
-                <a href="https://www.linkedIn.com/in/katharina-hinnrichs-68bb12173">
+                <a href="https://www.linkedIn.com/in/katharina-hinnrichs-68bb12173" target="_blank">
                   <img src="assets/img/linkedIn-icon.svg" alt="">
                 </a>
             </div>

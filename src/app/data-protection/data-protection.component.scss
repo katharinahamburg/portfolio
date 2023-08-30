@@ -1,0 +1,19 @@
+.data {
+   
+    display: block;
+    height: 100px;
+}
+
+.data-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 150px;  
+   
+  }
+
+  .data-end {
+    height: 50px;
+  }
