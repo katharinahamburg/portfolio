@@ -35,19 +35,8 @@ export class ContactComponent {
         body: fd
       }
     )
-    this.animateForm();
+    
   }
 
   
-  animateForm() {
-    if (this.sendMail) {
-        let form = document.getElementById('form');
-        let sendMessage = document.getElementById('send-message');
-        form.style.transform = 'rotateY(180deg)';
-        setTimeout(() => {
-        sendMessage.style.visibility = 'visible';
-        sendMessage.style.zIndex = '9';
-      }, 200);
-    }
   }
-}
