@@ -31,7 +31,7 @@
 
 
 .skills-container {
-    width: 90%;
+    
     margin-top: 50px;
     margin-bottom: 50px;
     border: 4px solid black;
@@ -40,6 +40,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-left: 6%;
+    margin-right: 6%;
     
     h2 {
         margin-top: -40px;

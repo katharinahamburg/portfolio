@@ -1,11 +1,5 @@
-* {
-  transition: all .2s ease-in-out;
-  scroll-behavior: smooth;
-}
-
 .portfolio {
-    padding-left: 8%;
-    padding-right: 8%;
+   
     gap: 50px;
     display: flex;
     flex-direction: column;
@@ -25,11 +19,13 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    margin-left: 6%;
+    margin-right: 6%;
   }
   
   .project-box-reverse {
     transition: all 130ms ease-in-out;
-    padding-left: 50px;
+    margin-right: 6%;
   }
   
   .project-infobox {
@@ -95,7 +91,7 @@
      .project-frame, .project-frame-reverse {
         position: relative;
         transition: border 130ms ease-in-out; 
-        width: 110%; 
+        width: calc(100% + 10px);
         height: 85%;
         border-radius: 8px; 
       }
@@ -168,5 +164,6 @@
     flex-direction: row;
     justify-content: flex-end;
     animation: all .4s ease-in-out;
+    margin-right: 6%;
   }
   
