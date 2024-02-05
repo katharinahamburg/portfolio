@@ -33,13 +33,15 @@ updateSkillArrow()  {
     this.rightarrows[0];
   }
 
-  isHovered = [false, false, false];
+  isHovered = [false, false, false, false, false];
 
   rotateCircle(index: number) {
     this.isHovered[index]= true;
       document.getElementById('circle').style.transform = 'rotate(-150deg)';
       document.getElementById('circle_1').style.transform = 'rotate(150deg)';
-      document.getElementById('circle_2').style.transform = 'rotate(-150deg)';   
+      document.getElementById('circle_2').style.transform = 'rotate(-150deg)'; 
+      document.getElementById('circle_3').style.transform = 'rotate(150deg)';
+      document.getElementById('circle_4').style.transform = 'rotate(-150deg)';   
   }
 
   noRotationCircle(index: number) {
@@ -47,6 +49,8 @@ updateSkillArrow()  {
     document.getElementById('circle').style.transform = 'rotate(0deg)';
       document.getElementById('circle_1').style.transform = 'rotate(0deg)';
       document.getElementById('circle_2').style.transform = 'rotate(0deg)'; 
+      document.getElementById('circle_3').style.transform = 'rotate(0deg)';
+      document.getElementById('circle_4').style.transform = 'rotate(0deg)'; 
   }
 
 }

@@ -6,7 +6,7 @@
 <div class="project-box" (mouseover)="rotateCircle(0)" (mouseout)="noRotationCircle(0)">
     <div class="project-infobox">
       <div class="project-frame" [style.border]="isHovered[0] ? '5px solid black' : '4px solid transparent'">
-        <img class="project-img" src="assets/img/dum-join.png" alt="" [style.filter]="isHovered[0] ? 'grayscale(0)' : 'grayscale(1)'">
+        <img class="project-img" src="assets/img/mantey.jpg" alt="" [style.filter]="isHovered[0] ? 'grayscale(0)' : 'grayscale(1)'">
         <img id="circle" class="circle" src="assets/img/kreis2.svg" alt=""
         [style.display]="isHovered[0] ? 'block':'none'">
       </div>
@@ -14,19 +14,18 @@
     </div>
 
     <div class="project-decription">
-        <span class="counter">01/03</span>
+        <span class="counter">01/05</span>
     <div class="project-box-reverse" 
     [style.visibility]="isHovered[0] ? 'visible' : 'hidden'"
     [style.transform]="isHovered[0] ? 'translateX(0px)' : 'translateX(-442px)'">
       
         <div class="project">
-          <h3>Join</h3>
+          <h3>Praxis Dr. Mantey-Stiers</h3>
         </div>
         <span class="stack">JavaScript | HTML | CSS</span>
-        <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign
-          users and categories. This was a team project.</p> 
+        <p>Projekt: Webseite für eine allgemeinmedizinische Praxis. </p> 
           <div class="portfolio-btn">
-            <a href="https:///" target="_blank"><button class="btn">Try it!</button></a>
+            <a href="https://praxis.hinnrichs.de/index.html" target="_blank"><button class="btn">Try it!</button></a>
             <a href="https://" target="_blank"><button class="btn">GitHub</button></a>
     </div>
           
@@ -37,7 +36,7 @@
 
   <div class="project-box"(mouseover)="rotateCircle(1)" (mouseout)="noRotationCircle(1)">
     <div class="project-decription">
-        <span class="counter-reverse">02/03</span>
+        <span class="counter-reverse">02/05</span>
     <div class="project-box-reverse"
     [style.visibility]="isHovered[1] ? 'visible' : 'hidden'"
     [style.transform]="isHovered[1] ? 'translateX(0px)' : 'translateX(442px)'">
@@ -45,9 +44,9 @@
           <h3>Kochwelt</h3>
         </div>
         <span class="stack">JavaScript | HTML | CSS</span>
-        <p>Mini clone of a famous recepie platform.</p>
+        <p>Mini clone of the popular recipe platform.</p>
         <div class="portfolio-btn">
-          <a href="https:///" target="_blank"><button class="btn">Try it!</button></a>
+          <a href="https://kochwelt.hinnrichs.de/index.html" target="_blank"><button class="btn">Try it!</button></a>
           <a href="https://" target="_blank"><button class="btn">GitHub</button></a>
         </div>
       </div>
@@ -72,7 +71,7 @@
       </div>
     </div>
     <div class="project-decription">
-        <span class="counter">03/03</span>
+        <span class="counter">03/05</span>
     <div class="project-box-reverse"
     [style.visibility]="isHovered[2] ? 'visible' : 'hidden'"
     [style.transform]="isHovered[2] ? 'translateX(0px)' : 'translateX(-442px)'">
@@ -83,12 +82,68 @@
         <p>Based on the PokéAPI a simple library that provides and catalogues pokémon information.</p>
         <div class="portfolio-btn">
             <a href="https://pokedexx.hinnrichs.de/" target="_blank"><button class="btn">Try it!</button></a>
-            <a href="https://" target="_blank"><button class="btn">GitHub</button></a>
+            <a href="https://github.com/katharinahamburg/pokedex" target="_blank"><button class="btn">GitHub</button></a>
           </div>
+    </div>  
+  </div>
+  </div>
+
+  <div class="project-box"(mouseover)="rotateCircle(1)" (mouseout)="noRotationCircle(1)">
+    <div class="project-decription">
+        <span class="counter-reverse">04/05</span>
+    <div class="project-box-reverse"
+    [style.visibility]="isHovered[1] ? 'visible' : 'hidden'"
+    [style.transform]="isHovered[1] ? 'translateX(0px)' : 'translateX(442px)'">
+        <div class="project">
+          <h3>Ring of Fire</h3>
+        </div>
+        <span class="stack">Angular | HTML | SCSS | TypeScript</span>
+        <p>Angular Projekt nach dem berühmten Kartenspiel.</p>
+        <div class="portfolio-btn">
+          <a href="https:///" target="_blank"><button class="btn">Try it!</button></a>
+          <a href="https://github.com/katharinahamburg/ring-of-fire" target="_blank"><button class="btn">GitHub</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-infobox">
+      <div class="project-frame-reverse" [style.border]="isHovered[1] ? '5px solid black' : '4px solid transparent'">
+        <img class="project-img" src="assets/img/ring-of-fire.jpg" alt="" [style.filter]="isHovered[1] ? 'grayscale(0)' : 'grayscale(1)'">
+        <img id="circle_3" class="circle circle-reverse" src="assets/img/kreis2.svg" alt=""
+        [style.display]="isHovered[1] ? 'block':'none'">
+      </div>
     </div>
   </div>
 
+
+
+  <div class="project-box"(mouseover)="rotateCircle(2)" (mouseout)="noRotationCircle(2)">
+    <div class="project-infobox">
+      <div class="project-frame" [style.border]="isHovered[2] ? '5px solid black' : '4px solid transparent'">
+        <img class="project-img" src="assets/img/portfolio.jpg" alt="" [style.filter]="isHovered[2] ? 'grayscale(0)' : 'grayscale(1)'">
+        <img id="circle_4" class="circle" src="assets/img/kreis2.svg" alt=""
+        [style.display]="isHovered[2] ? 'block':'none'">
+      </div>
+    </div>
+    <div class="project-decription">
+        <span class="counter">05/05</span>
+    <div class="project-box-reverse"
+    [style.visibility]="isHovered[2] ? 'visible' : 'hidden'"
+    [style.transform]="isHovered[2] ? 'translateX(0px)' : 'translateX(-442px)'">
+        <div class="project">
+          <h3>Portfolio</h3>
+        </div>
+        <span class="stack">Angular | HTML | SCSS | TypeScript</span>
+        <p>Portfolio nach Vorgaben eines Mockups.</p>
+        <div class="portfolio-btn">
+            
+            <a href="https://github.com/katharinahamburg/portfolio" target="_blank"><button class="btn">GitHub</button></a>
+          </div>
+    </div>  
   </div>
+  </div>
+
+
   <div id="arrow-right" class="arrow-animation" (mouseover)="updateSkillArrow()" (mouseout)="showFirstArrow()">
     <img 
     *ngIf="updateSkillArrow" src="assets/img/{{ rightarrows[currentSkillArrow] }}" alt="">
